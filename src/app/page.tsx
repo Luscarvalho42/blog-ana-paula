@@ -1,11 +1,11 @@
 import Apresentacao from "@/components/Apresentacao";
 import AreasDeAtuacao from "@/components/AreasDeAtuacao";
+import HeroSection from "@/layouts/HeroSection";
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
-      <Apresentacao />
-      <AreasDeAtuacao />
+      <HeroSection />
     </>
   );
 }

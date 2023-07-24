@@ -25,7 +25,7 @@ export default async function AreasDeAtuacao() {
   };
 
   return (
-    <section className="bg-zinc-200 flex flex-col justify-center items-center h-screen">
+    <section className="bg-zinc-200 flex flex-col justify-center items-center">
       <h1 className="text-center text-2xl font-bold mb-4">Áreas de atuação</h1>
       <div className="flex flex-wrap justify-center gap-4">
         {cartoesAreasDeAtuacao()}

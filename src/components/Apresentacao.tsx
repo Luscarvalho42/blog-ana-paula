@@ -4,7 +4,7 @@ import img from "../../public/apresentacao/img.webp";
 export default function Apresentacao() {
   return (
     <section
-      className="h-screen w-screen p-4 flex items-center justify-center"
+      className="min-h-screen w-screen p-4 flex items-center justify-center"
       style={{
         backgroundImage: `url(${bg.src})`,
         backgroundSize: "cover",
