@@ -1,46 +1,48 @@
 import { Subtitle, Title } from "@/components/Tipografia";
 import heroImg from "../../public/img/hero-img.png";
-import Image from "next/image";
+import { ChevronRight } from "react-feather";
 
-export default function HeroSection() {
+export const HeroSection = () => {
   return (
-    <section className="min-h-screen w-screen px-2 flex justify-center">
-      <div
-        className="bg-white"
-        style={{
-          height: "calc(100vh - 16px)",
-          width: "calc(100vw - 32px)",
-          borderRadius: "0 0 12px 12px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "flex-end",
-        }}
-      >
-        <div>
-          <div className="text-center">
-            <Title>Ana Paula Vilas Boas</Title>
-            <Subtitle>Advocacia e Consultoria Jurídica</Subtitle>
+    <section className="h-screen w-screen px-4 pb-4 flex justify-center m-auto">
+      <div className="bg-white h-full w-full rounded-b-xl shadow-2xl">
+        <div className="h-full w-full max-w-7xl m-auto flex flex-col items-center justify-end md:flex-row md:items-end md:justify-evenly ">
+          <div className="h-full flex flex-col justify-center gap-8">
+            <div className="text-center">
+              <Title>Ana Paula Vilas Boas</Title>
+              <Subtitle>Advocacia e Consultoria Jurídica</Subtitle>
+            </div>
+            <div className="flex justify-center gap-4">
+              <div className="rounded-full bg-stone-800 w-6 h-6">w</div>
+              <div className="rounded-full bg-stone-800 w-6 h-6">f</div>
+              <div className="rounded-full bg-stone-800 w-6 h-6">l</div>
+            </div>
+            <div>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex rounded-md overflow-hidden text-white w-32 hover:opacity-70 duration-300 m-auto"
+              >
+                <div className="bg-stone-500 px-4 py-2  font-serif text-2xl">
+                  Blog
+                </div>
+                <div className="bg-stone-600 w-full h-12 flex items-center justify-center">
+                  <ChevronRight size={36} />
+                </div>
+              </a>
+            </div>
           </div>
-          <div className="flex">
-            <div className="rounded-full bg-stone-800 w-6 h-6">w</div>
-            <div className="rounded-full bg-stone-800 w-6 h-6">f</div>
-            <div className="rounded-full bg-stone-800 w-6 h-6">l</div>
-          </div>
-          <div>
-            <Title>Blog</Title>
+
+          <div className="h-1/2 md:h-3/5 lg:h-5/6">
+            <img
+              src={heroImg.src}
+              alt="Foto da advogada Ana Paula Vilas Boas"
+              className="object-cover h-full"
+            />
           </div>
         </div>
-
-        <img
-          src={heroImg.src}
-          alt="Foto da advogada Ana Paula Vilas Boas"
-          style={{
-            objectFit: "cover",
-            maxHeight: "50%",
-          }}
-        />
       </div>
     </section>
   );
-}
+};
