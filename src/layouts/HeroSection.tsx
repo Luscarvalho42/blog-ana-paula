@@ -1,4 +1,4 @@
-import { Subtitle, Title } from "@/components/Tipografia";
+import { Subtitle, Title } from "@/components/Typography";
 import heroImg from "../../public/img/hero-img.png";
 import { ChevronRight } from "react-feather";
 
@@ -24,7 +24,7 @@ export const HeroSection = () => {
                 rel="noopener noreferrer"
                 className="flex rounded-md overflow-hidden text-white w-32 hover:opacity-70 duration-300 m-auto"
               >
-                <div className="bg-stone-500 px-4 py-2  font-serif text-2xl">
+                <div className="bg-stone-500 px-4 py-2 font-sans font-black text-2xl">
                   Blog
                 </div>
                 <div className="bg-stone-600 w-full h-12 flex items-center justify-center">

@@ -1,5 +1,5 @@
 "use client";
-import { Subtitle, Title } from "@/components/Tipografia";
+import { Subtitle, Title } from "@/components/Typography";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -26,20 +26,14 @@ export const LastPostsSection = () => {
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
         >
-          <div className="bg-white h-96 min-w-[300px] rounded-xl"></div>
-          <div className="bg-white h-96 min-w-[300px] rounded-xl"></div>
-          <div className="bg-white h-96 min-w-[300px] rounded-xl"></div>
-          <div className="bg-white h-96 min-w-[300px] rounded-xl"></div>
-          <div className="bg-white h-96 min-w-[300px] rounded-xl"></div>
-          <div className="bg-white h-96 min-w-[300px] rounded-xl"></div>
+          <div className="bg-white h-96 min-w-[288px] rounded-xl"></div>
+          <div className="bg-white h-96 min-w-[288px] rounded-xl"></div>
+          <div className="bg-white h-96 min-w-[288px] rounded-xl"></div>
+          <div className="bg-white h-96 min-w-[288px] rounded-xl"></div>
+          <div className="bg-white h-96 min-w-[288px] rounded-xl"></div>
+          <div className="bg-white h-96 min-w-[288px] rounded-xl"></div>
         </motion.div>
       </motion.div>
-      <script
-        src="https://static.elfsight.com/platform/platform.js"
-        data-use-service-core
-        defer
-      ></script>
-      <div className="elfsight-app-939db9d4-e1be-417b-bcbe-4cb4a68a4019"></div>
     </section>
   );
 };

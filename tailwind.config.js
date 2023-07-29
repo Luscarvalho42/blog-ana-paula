@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       serif: ["Roboto Slab"],
+      sans: ["Nunito"],
     },
     extend: {},
   },
