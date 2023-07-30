@@ -6,7 +6,7 @@ export const MessageSection = () => {
   return (
     <section className="w-screen max-w-7xl px-4 m-auto mt-16">
       <div
-        className="w-full h-96 flex items-end sm:items-center justify-center m-auto opacity-90 rounded-xl"
+        className="w-full h-96 flex items-end sm:items-center justify-center m-auto opacity-90 rounded-t-xl"
         style={{
           backgroundImage: `url(${imgMessage.src})`,
           backgroundSize: "cover",
@@ -14,7 +14,7 @@ export const MessageSection = () => {
           backgroundPosition: "center top",
         }}
       >
-        <div className="rounded-b-xl sm:rounded-xl bg-white/80 backdrop-blur-md max-w-xl text-center p-8">
+        <div className="sm:rounded-xl bg-white/80 backdrop-blur-md max-w-xl text-center p-8">
           <Paragraph>
             Soluções jurídicas confiáveis ​​para proteger seus interesses.
             Escritório de advocacia que oferece uma abordagem acessível e eficaz

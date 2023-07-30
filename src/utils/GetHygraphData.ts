@@ -1,4 +1,4 @@
-export const BuscarDadosHygraph = async (query: string) => {
+export const GetHygraphData = async (query: string) => {
   const response = await fetch(process.env.HYGRAPH_URL!, {
     method: "POST",
     headers: {

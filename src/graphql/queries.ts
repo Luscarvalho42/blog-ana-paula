@@ -1,13 +1,14 @@
 import { gql } from "graphql-request";
 
-export const BUSCAR_AREAS_ATUACAO = gql`
-  query buscarAreasAtuacao {
-    areasDeAtuacao {
-      area
-      icone {
+export const GET_SERVICES = gql`
+  query Services {
+    services {
+      name
+      icon {
         url
+        fileName
       }
-      descricao
+      description
     }
   }
 `;

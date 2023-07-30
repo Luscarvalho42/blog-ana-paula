@@ -25,7 +25,7 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="bg-stone-500">
+      <body className="bg-stone-500 scroll-smooth overflow-x-hidden">
         {children}
         <Footer />
       </body>
