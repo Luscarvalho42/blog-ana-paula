@@ -10,7 +10,7 @@ export const ServicesSection = async () => {
     return (
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {services.map(({ name, icon, description }, index) => (
-          <div id={name} className="sm:rounded-xl  sm:bg-stone-100 sm:p-4">
+          <div key={name} className="sm:rounded-xl  sm:bg-stone-100 sm:p-4">
             <hr className={index === 0 ? "hidden" : "" + " my-4 sm:hidden"} />
             <div className="flex items-center sm:justify-center gap-4 mb-4">
               <img className="h-7 w-auto" src={icon.url} alt={icon.fileName} />
