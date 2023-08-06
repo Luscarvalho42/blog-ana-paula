@@ -5,10 +5,19 @@
 }
 
 .link .indicator {
+  list-style-type: none;
   width: 10px;
   height: 10px;
   background-color: black;
+  opacity: 0;
   border-radius: 50%;
   position: absolute;
   left: -30px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.link:hover .indicator {
+  opacity: 1;
 }

@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
+
 import styles from "./styles.module.css";
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
 import { menuSlide } from "../anim";
 import { NavLink } from "./Link";
 
@@ -29,10 +28,7 @@ const navItems = [
   },
 ];
 
-export default function index() {
-  const pathname = usePathname();
-  const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-
+const index = () => {
   return (
     <motion.div
       variants={menuSlide}
@@ -42,27 +38,17 @@ export default function index() {
       className={`bg-white/75 backdrop-blur-xl ${styles.menu}`}
     >
       <div className={styles.body}>
-        <div
-          onMouseLeave={() => {
-            setSelectedIndicator(pathname);
-          }}
-          className={styles.nav}
-        >
+        <div className={styles.nav}>
           <div className={styles.header}>
             <p className="font-bold font-serif">Ana Paula Vilas Boas</p>
           </div>
           {navItems.map((data, index) => {
-            return (
-              <NavLink
-                key={index}
-                data={{ ...data, index }}
-                isActive={selectedIndicator == data.href}
-                setSelectedIndicator={setSelectedIndicator}
-              ></NavLink>
-            );
+            return <NavLink key={index} data={{ ...data, index }}></NavLink>;
           })}
         </div>
       </div>
     </motion.div>
   );
-}
+};
+
+export default index;
