@@ -13,7 +13,10 @@ export const LastPostsSection = () => {
     }
   }, []);
   return (
-    <section className="w-full max-w-7xl m-auto px-4 overflow-hidden">
+    <section
+      id="postagens"
+      className="w-full max-w-7xl m-auto px-4 overflow-hidden"
+    >
       <Title className="text-white mb-2 mt-8">Últimas postagens</Title>
 
       <motion.div

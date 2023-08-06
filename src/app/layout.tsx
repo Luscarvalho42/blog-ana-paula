@@ -1,5 +1,6 @@
 import { Footer } from "@/layouts/Footer";
 import "./globals.css";
+import { Header } from "@/components/Header";
 
 export const metadata = {
   title: "Ana Paula",
@@ -25,7 +26,8 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="bg-stone-500 scroll-smooth overflow-x-hidden">
+      <body className="bg-stone-500 overflow-x-hidden">
+        <Header />
         {children}
         <Footer />
       </body>

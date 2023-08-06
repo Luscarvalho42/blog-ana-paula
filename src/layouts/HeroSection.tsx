@@ -4,7 +4,10 @@ import { ChevronRight } from "react-feather";
 
 export const HeroSection = () => {
   return (
-    <section className="h-screen w-screen px-4 pb-4 flex justify-center m-auto">
+    <section
+      id="inicio"
+      className="h-screen w-screen px-4 pb-4 flex justify-center m-auto"
+    >
       <div className="bg-white h-full w-full rounded-b-xl shadow-2xl">
         <div className="h-full w-full max-w-7xl m-auto flex flex-col items-center justify-end md:flex-row md:items-end md:justify-evenly ">
           <div className="h-full flex flex-col justify-center gap-8">

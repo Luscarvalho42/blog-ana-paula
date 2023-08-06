@@ -3,7 +3,7 @@ import { Paragraph, Subtitle, Title } from "@/components/Typography";
 
 export const Footer = () => {
   return (
-    <section className="w-screen bg-white mt-16">
+    <section id="contato" className="w-screen bg-white mt-16">
       <div className="max-w-7xl m-auto flex flex-col-reverse sm:flex-row p-4 gap-4">
         <div className="rounded-xl overflow-hidden flex-1">
           <iframe
